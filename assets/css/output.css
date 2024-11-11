@@ -2240,6 +2240,10 @@ input.tab:checked + .tab-content,
   margin-top: 0px;
 }
 
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
 .block {
   display: block;
 }
@@ -2254,6 +2258,10 @@ input.tab:checked + .tab-content,
 
 .table {
   display: table;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -2290,6 +2298,18 @@ input.tab:checked + .tab-content,
 
 .w-full {
   width: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -2344,8 +2364,20 @@ input.tab:checked + .tab-content,
   gap: 30px;
 }
 
+.gap-\[132px\] {
+  gap: 132px;
+}
+
+.gap-\[60px\] {
+  gap: 60px;
+}
+
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border {
@@ -2389,6 +2421,15 @@ input.tab:checked + .tab-content,
 .bg-\[\#FFFFFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FFCF01\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 207 1 / var(--tw-bg-opacity));
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-5 {
@@ -2450,6 +2491,10 @@ input.tab:checked + .tab-content,
 
 .pt-\[100px\] {
   padding-top: 100px;
+}
+
+.pb-\[60px\] {
+  padding-bottom: 60px;
 }
 
 .text-center {
@@ -2520,6 +2565,10 @@ input.tab:checked + .tab-content,
   line-height: 70px;
 }
 
+.leading-\[24px\] {
+  line-height: 24px;
+}
+
 .text-\[\#1B1C1E\] {
   --tw-text-opacity: 1;
   color: rgb(27 28 30 / var(--tw-text-opacity));
@@ -2583,6 +2632,10 @@ input.tab:checked + .tab-content,
   .sm\:hidden {
     display: none;
   }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) {
@@ -2598,13 +2651,37 @@ input.tab:checked + .tab-content,
     display: block;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:gap-\[20px\] {
     gap: 20px;
+  }
+
+  .md\:gap-\[132px\] {
+    gap: 132px;
   }
 }
 
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
