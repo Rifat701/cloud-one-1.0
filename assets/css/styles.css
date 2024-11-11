@@ -1,0 +1,11 @@
+.btn-hover svg {
+  color: #1b1c1e;
+  margin-top: 3px;
+}
+.btn-hover:hover {
+  background-color: #1b1c1e;
+}
+.btn-hover:hover span,
+.btn-hover:hover svg {
+  color: #fff;
+}
