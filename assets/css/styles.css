@@ -9,3 +9,17 @@
 .btn-hover:hover svg {
   color: #fff;
 }
+[id^='accordion'] {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+[id^='accordion']:not(.hidden) {
+  max-height: 500px; /* Adjust this value based on your content */
+}
+
+/* Make sure the SVG rotation is also animated */
+button svg {
+  transition: transform 0.2s ease-out;
+}

@@ -1574,44 +1574,23 @@
             <br class="hidden md:block" />
             packages and a web page edit
           </p>
+
           <div
             class="flex flex-col justify-start items-start gap-[30px] mt-[60px]"
           >
-            <a
-              href="#"
-              class="border border-[#1B1C1E] py-[20px] px-[40px] rounded flex justify-between items-center gap-[74px]"
-            >
-              <h4 class="text-[#1B1C1E] text-[16px] md:text-[20px] font-medium">
-                How do you ensure the security and confiden
-              </h4>
-              <svg
-                class="w-4 h-4 md:w-4 md:h-4 lg:w-4 lg:h-4"
-                width="10"
-                height="16"
-                viewBox="0 0 10 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.50012 16C1.14856 16 0.83606 15.8828 0.601685 15.6484C0.0938721 15.1797 0.0938721 14.3594 0.601685 13.8906L5.95325 8.5L0.601685 3.14844C0.0938721 2.67969 0.0938721 1.85938 0.601685 1.39062C1.07043 0.882812 1.89075 0.882812 2.3595 1.39062L8.6095 7.64062C9.11731 8.10938 9.11731 8.92969 8.6095 9.39844L2.3595 15.6484C2.12512 15.8828 1.81262 16 1.50012 16Z"
-                  fill="#FF9A66"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="border border-[#1B1C1E] py-[20px] px-[40px] rounded"
-            >
-              <div
-                class="border-b border-[#1B1C1E] pb-[20px] flex justify-between items-center gap-[117px]"
+            <!-- First Accordion -->
+            <div class="w-full border border-[#1B1C1E] rounded">
+              <button
+                onclick="toggleAccordion('accordion1')"
+                class="w-full py-[20px] px-[40px] flex justify-between items-center gap-[79px]"
               >
                 <h4
-                  class="text-[#1B1C1E] text-[16px] md:text-[20px] font-medium"
+                  class="text-[#1B1C1E] text-[16px] md:text-[20px] font-medium text-left"
                 >
-                  What is the typical response time for IT ?
+                  How do you ensure the security and confiden
                 </h4>
                 <svg
-                  class="w-4 h-4 md:w-4 md:h-4 lg:w-4 lg:h-4"
+                  class="w-4 h-4 md:w-4 md:h-4 lg:w-4 lg:h-4 transition-transform"
                   width="16"
                   height="10"
                   viewBox="0 0 16 10"
@@ -1623,57 +1602,142 @@
                     fill="#1B1C1E"
                   />
                 </svg>
+              </button>
+              <div id="accordion1" class="hidden px-[40px] pb-[20px]">
+                <p
+                  class="text-[#1B1C1E] text-[14px] font-normal pt-4 border-t border-[#1B1C1E]"
+                >
+                  It is a long established fact that a reader will be distracte
+                  the readable content
+                  <br class="hidden md:block" />
+                  of a page when looking at its layout. Many desktp publishing
+                  packages and a
+                  <br class="hidden md:block" />
+                  web page editors now use Lorem Ipsum
+                </p>
               </div>
-              <p class="text-[#1B1C1E] text-[14px] font-normal mt-4">
-                It is a long established fact that a reader will be distracte
-                the readable content <br class="hidden md:block" />
-                of a page when looking at its layout. Many desktp publishing
-                packages and a <br class="hidden md:block" />
-                web page editors now use Lorem Ipsum
-              </p>
-            </a>
-            <a
-              href="#"
-              class="border border-[#1B1C1E] py-[20px] px-[40px] rounded flex justify-between items-center gap-[71px]"
-            >
-              <h4 class="text-[#1B1C1E] text-[16px] md:text-[20px] font-medium">
-                What services does your IT company provide?
-              </h4>
-              <svg
-                class="w-4 h-4 md:w-4 md:h-4 lg:w-4 lg:h-4"
-                width="10"
-                height="16"
-                viewBox="0 0 10 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            </div>
+
+            <!-- Second Accordion -->
+            <div class="w-full border border-[#1B1C1E] rounded">
+              <button
+                onclick="toggleAccordion('accordion2')"
+                class="w-full py-[20px] px-[40px] flex justify-between items-center gap-[79px]"
               >
-                <path
-                  d="M1.50012 16C1.14856 16 0.83606 15.8828 0.601685 15.6484C0.0938721 15.1797 0.0938721 14.3594 0.601685 13.8906L5.95325 8.5L0.601685 3.14844C0.0938721 2.67969 0.0938721 1.85938 0.601685 1.39062C1.07043 0.882812 1.89075 0.882812 2.3595 1.39062L8.6095 7.64062C9.11731 8.10938 9.11731 8.92969 8.6095 9.39844L2.3595 15.6484C2.12512 15.8828 1.81262 16 1.50012 16Z"
-                  fill="#FF9A66"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="border border-[#1B1C1E] py-[20px] px-[40px] rounded flex justify-between items-center gap-[80px]"
-            >
-              <h4 class="text-[#1B1C1E] text-[16px] md:text-[20px] font-medium">
-                Streamline your operations with CloudOne's?
-              </h4>
-              <svg
-                class="w-4 h-4 md:w-4 md:h-4 lg:w-4 lg:h-4"
-                width="10"
-                height="16"
-                viewBox="0 0 10 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                <h4
+                  class="text-[#1B1C1E] text-[16px] md:text-[20px] font-medium text-left"
+                >
+                  What is the typical response time for IT ?
+                </h4>
+                <svg
+                  class="w-4 h-4 md:w-4 md:h-4 lg:w-4 lg:h-4 transition-transform"
+                  width="16"
+                  height="10"
+                  viewBox="0 0 16 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.000121961 1.5C0.000121976 1.14844 0.117309 0.835937 0.351685 0.601562C0.820435 0.0937492 1.64075 0.0937493 2.1095 0.601562L7.50012 5.95312L12.8517 0.601562C13.3204 0.0937498 14.1407 0.0937498 14.6095 0.601562C15.1173 1.07031 15.1173 1.89062 14.6095 2.35937L8.3595 8.60937C7.89075 9.11719 7.07043 9.11719 6.60168 8.60937L0.351684 2.35937C0.117309 2.125 0.000121947 1.8125 0.000121961 1.5Z"
+                    fill="#1B1C1E"
+                  />
+                </svg>
+              </button>
+              <div id="accordion2" class="px-[40px] pb-[20px]">
+                <!-- Removed hidden class -->
+                <p
+                  class="text-[#1B1C1E] text-[14px] font-normal pt-4 border-t border-[#1B1C1E]"
+                >
+                  It is a long established fact that a reader will be distracte
+                  the readable content
+                  <br class="hidden md:block" />
+                  of a page when looking at its layout. Many desktp publishing
+                  packages and a
+                  <br class="hidden md:block" />
+                  web page editors now use Lorem Ipsum
+                </p>
+              </div>
+            </div>
+
+            <!-- Third Accordion -->
+            <div class="w-full border border-[#1B1C1E] rounded">
+              <button
+                onclick="toggleAccordion('accordion3')"
+                class="w-full py-[20px] px-[40px] flex justify-between items-center gap-[79px]"
               >
-                <path
-                  d="M1.50012 16C1.14856 16 0.83606 15.8828 0.601685 15.6484C0.0938721 15.1797 0.0938721 14.3594 0.601685 13.8906L5.95325 8.5L0.601685 3.14844C0.0938721 2.67969 0.0938721 1.85938 0.601685 1.39062C1.07043 0.882812 1.89075 0.882812 2.3595 1.39062L8.6095 7.64062C9.11731 8.10938 9.11731 8.92969 8.6095 9.39844L2.3595 15.6484C2.12512 15.8828 1.81262 16 1.50012 16Z"
-                  fill="#FF9A66"
-                />
-              </svg>
-            </a>
+                <h4
+                  class="text-[#1B1C1E] text-[16px] md:text-[20px] font-medium text-left"
+                >
+                  What services does your IT company provide?
+                </h4>
+                <svg
+                  class="w-4 h-4 md:w-4 md:h-4 lg:w-4 lg:h-4 transition-transform"
+                  width="16"
+                  height="10"
+                  viewBox="0 0 16 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.000121961 1.5C0.000121976 1.14844 0.117309 0.835937 0.351685 0.601562C0.820435 0.0937492 1.64075 0.0937493 2.1095 0.601562L7.50012 5.95312L12.8517 0.601562C13.3204 0.0937498 14.1407 0.0937498 14.6095 0.601562C15.1173 1.07031 15.1173 1.89062 14.6095 2.35937L8.3595 8.60937C7.89075 9.11719 7.07043 9.11719 6.60168 8.60937L0.351684 2.35937C0.117309 2.125 0.000121947 1.8125 0.000121961 1.5Z"
+                    fill="#1B1C1E"
+                  />
+                </svg>
+              </button>
+              <div id="accordion3" class="hidden px-[40px] pb-[20px]">
+                <p
+                  class="text-[#1B1C1E] text-[14px] font-normal pt-4 border-t border-[#1B1C1E]"
+                >
+                  It is a long established fact that a reader will be distracte
+                  the readable content
+                  <br class="hidden md:block" />
+                  of a page when looking at its layout. Many desktp publishing
+                  packages and a
+                  <br class="hidden md:block" />
+                  web page editors now use Lorem Ipsum
+                </p>
+              </div>
+            </div>
+
+            <!-- Fourth Accordion -->
+            <div class="w-full border border-[#1B1C1E] rounded">
+              <button
+                onclick="toggleAccordion('accordion4')"
+                class="w-full py-[20px] px-[40px] flex justify-between items-center gap-[79px]"
+              >
+                <h4
+                  class="text-[#1B1C1E] text-[16px] md:text-[20px] font-medium text-left"
+                >
+                  Streamline your operations with CloudOne's?
+                </h4>
+                <svg
+                  class="w-4 h-4 md:w-4 md:h-4 lg:w-4 lg:h-4 transition-transform"
+                  width="16"
+                  height="10"
+                  viewBox="0 0 16 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.000121961 1.5C0.000121976 1.14844 0.117309 0.835937 0.351685 0.601562C0.820435 0.0937492 1.64075 0.0937493 2.1095 0.601562L7.50012 5.95312L12.8517 0.601562C13.3204 0.0937498 14.1407 0.0937498 14.6095 0.601562C15.1173 1.07031 15.1173 1.89062 14.6095 2.35937L8.3595 8.60937C7.89075 9.11719 7.07043 9.11719 6.60168 8.60937L0.351684 2.35937C0.117309 2.125 0.000121947 1.8125 0.000121961 1.5Z"
+                    fill="#1B1C1E"
+                  />
+                </svg>
+              </button>
+              <div id="accordion4" class="hidden px-[40px] pb-[20px]">
+                <p
+                  class="text-[#1B1C1E] text-[14px] font-normal pt-4 border-t border-[#1B1C1E]"
+                >
+                  It is a long established fact that a reader will be distracte
+                  the readable content
+                  <br class="hidden md:block" />
+                  of a page when looking at its layout. Many desktp publishing
+                  packages and a
+                  <br class="hidden md:block" />
+                  web page editors now use Lorem Ipsum
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2267,5 +2331,43 @@
     </div>
 
     <script src="assets/js/custom.js"></script>
+
+    <script>
+      function toggleAccordion(id) {
+        // Get the content element
+        const content = document.getElementById(id);
+
+        // Get the button that triggered this
+        const button = content.previousElementSibling;
+        const svg = button.querySelector('svg');
+
+        // If opening this accordion
+        if (content.classList.contains('hidden')) {
+          // First close any open accordions
+          const allContents = document.querySelectorAll('[id^="accordion"]');
+          allContents.forEach((el) => {
+            if (!el.classList.contains('hidden')) {
+              el.style.maxHeight = '0px';
+              el.classList.add('hidden');
+              const otherButton = el.previousElementSibling;
+              const otherSvg = otherButton.querySelector('svg');
+              otherSvg.style.transform = 'rotate(0)';
+            }
+          });
+
+          // Then open this accordion
+          content.classList.remove('hidden');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          svg.style.transform = 'rotate(180deg)';
+        } else {
+          // Closing this accordion
+          content.style.maxHeight = '0px';
+          setTimeout(() => {
+            content.classList.add('hidden');
+          }, 200); // Match this with the transition duration
+          svg.style.transform = 'rotate(0)';
+        }
+      }
+    </script>
   </body>
 </html>
