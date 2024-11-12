@@ -2349,6 +2349,10 @@ input.tab:checked + .tab-content,
   width: 1rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2359,8 +2363,17 @@ input.tab:checked + .tab-content,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-1 {
@@ -2549,6 +2562,10 @@ input.tab:checked + .tab-content,
   background-image: url('/assets/home-one/cta-bg.png');
 }
 
+.bg-\[url\(\'\/assets\/home-one\/sass\.png\'\)\] {
+  background-image: url('/assets/home-one/sass.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -2624,6 +2641,16 @@ input.tab:checked + .tab-content,
   padding-bottom: 50px;
 }
 
+.px-\[74px\] {
+  padding-left: 74px;
+  padding-right: 74px;
+}
+
+.py-\[77px\] {
+  padding-top: 77px;
+  padding-bottom: 77px;
+}
+
 .pb-\[120px\] {
   padding-bottom: 120px;
 }
@@ -2670,6 +2697,10 @@ input.tab:checked + .tab-content,
 
 .pb-\[20px\] {
   padding-bottom: 20px;
+}
+
+.pt-\[116px\] {
+  padding-top: 116px;
 }
 
 .text-center {
@@ -2788,6 +2819,12 @@ input.tab:checked + .tab-content,
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -2863,6 +2900,10 @@ input.tab:checked + .tab-content,
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:gap-\[132px\] {
