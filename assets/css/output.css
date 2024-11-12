@@ -2188,6 +2188,11 @@ input.tab:checked + .tab-content,
   margin-bottom: 20px;
 }
 
+.my-\[10px\] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -2264,6 +2269,18 @@ input.tab:checked + .tab-content,
   margin-top: -210px;
 }
 
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -2300,6 +2317,10 @@ input.tab:checked + .tab-content,
   height: 476px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-\[225px\] {
   width: 225px;
 }
@@ -2310,6 +2331,10 @@ input.tab:checked + .tab-content,
 
 .w-\[364px\] {
   width: 364px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .-translate-x-1\/2 {
@@ -2392,6 +2417,18 @@ input.tab:checked + .tab-content,
 
 .gap-\[60px\] {
   gap: 60px;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-\[58px\] {
+  gap: 58px;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .rounded {
@@ -2492,6 +2529,10 @@ input.tab:checked + .tab-content,
   padding: 1.5rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -2542,6 +2583,11 @@ input.tab:checked + .tab-content,
   padding-bottom: 17px;
 }
 
+.py-\[120px\] {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .pb-\[120px\] {
   padding-bottom: 120px;
 }
@@ -2584,6 +2630,10 @@ input.tab:checked + .tab-content,
 
 .pr-28 {
   padding-right: 7rem;
+}
+
+.pb-\[26px\] {
+  padding-bottom: 26px;
 }
 
 .text-center {
@@ -2769,6 +2819,10 @@ input.tab:checked + .tab-content,
 
   .md\:gap-\[20px\] {
     gap: 20px;
+  }
+
+  .md\:gap-\[58px\] {
+    gap: 58px;
   }
 
   .md\:px-0 {
