@@ -2298,6 +2298,10 @@ input.tab:checked + .tab-content,
   margin-top: 74px;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -2891,6 +2895,10 @@ input.tab:checked + .tab-content,
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .sm\:flex-col {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2914,6 +2922,10 @@ input.tab:checked + .tab-content,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
@@ -2932,6 +2944,10 @@ input.tab:checked + .tab-content,
 
   .md\:gap-\[175px\] {
     gap: 175px;
+  }
+
+  .md\:gap-\[30px\] {
+    gap: 30px;
   }
 
   .md\:px-0 {
