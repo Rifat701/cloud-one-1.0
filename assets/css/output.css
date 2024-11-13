@@ -2709,6 +2709,11 @@ input.tab:checked + .tab-content,
   padding-bottom: 77px;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -3061,6 +3066,10 @@ input.tab:checked + .tab-content,
 
   .md\:gap-\[58px\] {
     gap: 58px;
+  }
+
+  .md\:gap-\[10px\] {
+    gap: 10px;
   }
 
   .md\:px-0 {
