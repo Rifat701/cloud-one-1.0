@@ -167,7 +167,7 @@
             <img src="assets/home-two/hero-one.png" alt="" />
             <a
               href="#"
-              class="flex justify-center items-center md:gap-[10px] gap-1 md:py-[20px] py-2 md:px-[30px] px-2 rounded bg-[#FF9A66] absolute bottom-0 left-0"
+              class="btn-hover ease-out duration-300 flex justify-center items-center md:gap-[10px] gap-1 md:py-[20px] py-2 md:px-[30px] px-2 rounded bg-[#FF9A66] absolute bottom-0 left-0"
             >
               <h5 class="text-[#fff] font-semibold md:text-[16px] text-[12px]">
                 Read more
@@ -192,7 +192,7 @@
           >
             <img src="assets/home-two/hero-client.svg" alt="" />
             <h4 class="text-[#EE8735] text-[40px] font-medium mt-[40px] mb-1">
-              36K+
+              <span id="counter">0</span>K+
             </h4>
             <span class="text-[#000] text-[18px] font-medium"
               >Happy Clients</span
@@ -202,5 +202,38 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const counterElement = document.getElementById('counter');
+      const targetNumber = 36;
+      const duration = 2000; // 2 seconds
+      const steps = 60;
+      const increment = targetNumber / steps;
+      let current = 0;
+
+      function updateCounter() {
+        current += increment;
+        if (current > targetNumber) {
+          current = targetNumber;
+        }
+        counterElement.textContent = Math.round(current);
+
+        if (current < targetNumber) {
+          requestAnimationFrame(updateCounter);
+        }
+      }
+
+      // Start the counter when element is in view
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            updateCounter();
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      observer.observe(counterElement);
+    </script>
   </body>
 </html>
