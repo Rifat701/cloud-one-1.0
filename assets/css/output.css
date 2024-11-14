@@ -1014,6 +1014,18 @@ html {
   justify-self: end;
 }
 
+.progress {
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  height: 0.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+
 .radio {
   flex-shrink: 0;
   --chkbg: var(--bc);
@@ -1535,6 +1547,51 @@ input.tab:checked + .tab-content,
   0% {
     opacity: 0;
   }
+}
+
+.progress::-moz-progress-bar {
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate {
+  --progress-color: var(--fallback-bc,oklch(var(--bc)/1));
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+
+.progress::-webkit-progress-bar {
+  border-radius: var(--rounded-box, 1rem);
+  background-color: transparent;
+}
+
+.progress::-webkit-progress-value {
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate::-moz-progress-bar {
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
 }
 
 @keyframes progress-loading {
@@ -2271,6 +2328,10 @@ input.tab:checked + .tab-content,
   top: 0px;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -2278,6 +2339,11 @@ input.tab:checked + .tab-content,
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my-\[10px\] {
@@ -2407,6 +2473,18 @@ input.tab:checked + .tab-content,
   margin-top: 74px;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
 .block {
   display: block;
 }
@@ -2429,6 +2507,14 @@ input.tab:checked + .tab-content,
 
 .hidden {
   display: none;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-1\.5 {
+  height: 0.375rem;
 }
 
 .h-4 {
@@ -2494,6 +2580,34 @@ input.tab:checked + .tab-content,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@keyframes fillBarsOne {
+  0% {
+    max-width: 0%;
+  }
+
+  100% {
+    max-width: 65%;
+  }
+}
+
+.animate-fillBarsOne {
+  animation: fillBarsOne 2.5s forwards;
+}
+
+@keyframes fillBarsTwo {
+  0% {
+    max-width: 0%;
+  }
+
+  100% {
+    max-width: 75%;
+  }
+}
+
+.animate-fillBarsTwo {
+  animation: fillBarsTwo 2.5s forwards;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -2554,6 +2668,10 @@ input.tab:checked + .tab-content,
   gap: 1.5rem;
 }
 
+.gap-60 {
+  gap: 15rem;
+}
+
 .gap-\[10px\] {
   gap: 10px;
 }
@@ -2594,6 +2712,16 @@ input.tab:checked + .tab-content,
   gap: 79px;
 }
 
+.gap-36 {
+  gap: 9rem;
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -2620,6 +2748,22 @@ input.tab:checked + .tab-content,
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-t-0 {
+  border-top-width: 0px;
+}
+
+.border-l-0 {
+  border-left-width: 0px;
+}
+
+.border-t-\[0px\] {
+  border-top-width: 0px;
+}
+
+.border-none {
+  border-style: none;
 }
 
 .border-\[\#1B1C1E\] {
@@ -2677,16 +2821,26 @@ input.tab:checked + .tab-content,
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-orange-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
 
-.bg-\[url\(\'\/assets\/home-one\/cta-bg\.png\'\)\] {
-  background-image: url('/assets/home-one/cta-bg.png');
+.bg-\[url\(\'\.\.\/assets\/home-two\/hero-bg\.svg\'\)\] {
+  background-image: url('../assets/home-two/hero-bg.svg');
 }
 
-.bg-\[url\(\'\/assets\/home-one\/hero-two-bg\.svg\'\)\] {
-  background-image: url('/assets/home-one/hero-two-bg.svg');
+.bg-\[url\(\'\/assets\/home-one\/cta-bg\.png\'\)\] {
+  background-image: url('/assets/home-one/cta-bg.png');
 }
 
 .bg-\[url\(\'\/assets\/home-one\/sass\.png\'\)\] {
@@ -2713,9 +2867,9 @@ input.tab:checked + .tab-content,
   padding: 1.5rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-5 {
@@ -2796,11 +2950,6 @@ input.tab:checked + .tab-content,
 .py-\[77px\] {
   padding-top: 77px;
   padding-bottom: 77px;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .pb-20 {
@@ -3009,6 +3158,11 @@ input.tab:checked + .tab-content,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -3116,15 +3270,6 @@ input.tab:checked + .tab-content,
     width: 1rem;
   }
 
-  .md\:w-fit {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .md\:w-auto {
-    width: auto;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3135,6 +3280,10 @@ input.tab:checked + .tab-content,
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:gap-\[10px\] {
+    gap: 10px;
   }
 
   .md\:gap-\[132px\] {
@@ -3157,8 +3306,8 @@ input.tab:checked + .tab-content,
     gap: 58px;
   }
 
-  .md\:gap-\[10px\] {
-    gap: 10px;
+  .md\:gap-60 {
+    gap: 15rem;
   }
 
   .md\:px-0 {

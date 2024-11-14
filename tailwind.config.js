@@ -21,6 +21,23 @@ module.exports = {
     fontSize: {
       xs: '12px',
     },
+
+    extend: {
+      keyframes: {
+        fillBarsOne: {
+          '0%': { maxWidth: '0%' },
+          '100%': { maxWidth: '65%' },
+        },
+        fillBarsTwo: {
+          '0%': { maxWidth: '0%' },
+          '100%': { maxWidth: '75%' },
+        },
+      },
+      animation: {
+        fillBarsOne: 'fillBarsOne 2.5s forwards',
+        fillBarsTwo: 'fillBarsTwo 2.5s forwards',
+      },
+    },
   },
   plugins: [require('daisyui')],
 };

@@ -21,7 +21,7 @@
   </head>
   <body class="bg-[#FFFBE8]">
     <div
-      class="bg-[url('/assets/home-one/hero-two-bg.svg')] bg-cover bg-center bg-no-repeat pt-[30px] pb-[120px]"
+      class="bg-[url('../assets/home-two/hero-bg.svg')] bg-cover bg-center bg-no-repeat pt-[30px] pb-[120px]"
     >
       <div class="hidden md:block px-5 pb-[104px]">
         <div class="flex justify-between items-center">
@@ -203,6 +203,88 @@
       </div>
     </div>
 
+    <div class="container mx-auto px-5 py-[120px]">
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="flex flex-col justify-start items-start">
+          <h5 class="text-[#FF9A66] font-bold text-[14px] uppercase">
+            We are fastrans
+          </h5>
+          <h2
+            class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px]"
+          >
+            Transforming Industries <br class="hidden md:block" />
+            with Saas Innovations
+          </h2>
+          <p class="text-[#49494B]">
+            Cloud Services provide scalable on-demand access to computer
+            resources <br class="hidden md:block" />
+            such as storage databaseenable businesses to reduce costs improve
+          </p>
+
+          <div class="growth-wrapper mt-[20px]">
+            <div
+              class="growth-update-one flex justify-start items-center md:gap-60 gap-36"
+            >
+              <h5 class="text-[#49494B] font-normal m-0">
+                Simplify your business
+              </h5>
+              <span id="progress1" class="text-[#49494B]">65%</span>
+            </div>
+            <div
+              class="growth-bar-one h-1.5 mt-[10px] bg-gray-200 rounded-full"
+            >
+              <div
+                class="growth-per-one h-1.5 bg-[#FF9A66] rounded-full animate-fillBarsOne"
+              ></div>
+            </div>
+
+            <div
+              class="growth-update-two flex justify-between items-center mt-[30px]"
+            >
+              <h5 class="text-[#49494B] font-normal m-0">
+                Experience the freedom
+              </h5>
+              <span id="progress2" class="text-[#49494B]">75%</span>
+            </div>
+            <div
+              class="growth-bar-two h-1.5 mt-[10px] bg-gray-200 rounded-full"
+            >
+              <div
+                class="growth-per-two h-1.5 bg-[#FF9A66] rounded-full animate-fillBarsTwo"
+              ></div>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="mt-[50px] btn-hover ease-out duration-300 flex justify-center items-center gap-[10px] py-[20px] px-[30px] rounded bg-[#FF9A66] border-shadow"
+          >
+            <h5 class="text-[#fff] font-semibold md:text-[16px] text-[12px]">
+              Read more
+            </h5>
+            <svg
+              class="w-[10px] h-[10px] md:w-2 md:h-3"
+              width="8"
+              height="12"
+              viewBox="0 0 8 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.75 11.5C1.50391 11.5 1.28516 11.418 1.12109 11.2539C0.765625 10.9258 0.765625 10.3516 1.12109 10.0234L4.86719 6.25L1.12109 2.50391C0.765625 2.17578 0.765625 1.60156 1.12109 1.27344C1.44922 0.917969 2.02344 0.917969 2.35156 1.27344L6.72656 5.64844C7.08203 5.97656 7.08203 6.55078 6.72656 6.87891L2.35156 11.2539C2.1875 11.418 1.96875 11.5 1.75 11.5Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+        <img
+          src="assets/home-two/fastrans.png"
+          class="mt-[30px] md:mt-0"
+          alt=""
+        />
+      </div>
+    </div>
+
     <script>
       const counterElement = document.getElementById('counter');
       const targetNumber = 36;
@@ -234,6 +316,45 @@
       });
 
       observer.observe(counterElement);
+    </script>
+
+    <script>
+      // Progress counters
+      function createProgressCounter(elementId, targetValue) {
+        const element = document.getElementById(elementId);
+        const duration = 2000; // 2 seconds
+        const steps = 60;
+        const increment = targetValue / steps;
+        let current = 0;
+        let startTime = null;
+
+        function updateProgress(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const progress = timestamp - startTime;
+          const percentage = Math.min(progress / duration, 1);
+
+          current = targetValue * percentage;
+          element.textContent = Math.round(current) + '%';
+
+          if (progress < duration) {
+            requestAnimationFrame(updateProgress);
+          }
+        }
+
+        // Start counter when element is in view
+        new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              requestAnimationFrame(updateProgress);
+              entry.target.disconnect();
+            }
+          });
+        }).observe(element);
+      }
+
+      // Initialize both progress counters
+      createProgressCounter('progress1', 65);
+      createProgressCounter('progress2', 75);
     </script>
   </body>
 </html>
