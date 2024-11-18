@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "img": "blog1.png",
+    "user": "Brooklyn Simmons",
+    "date": "February 23, 2024",
+    "title": "Enhance Personalization with AI-Driven CRM Emails",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Artificial Intelligence"
+  },
+  {
+    "id": 2,
+    "img": "blog2.png",
+    "user": "Jenny Wilson",
+    "date": "April 12, 2024",
+    "title": "The Transformative Power of AI in Sales Forecasting",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Developer"
+  },
+  {
+    "id": 3,
+    "img": "blog3.png",
+    "user": "Jenny Wilson",
+    "date": "April 12, 2024",
+    "title": "Maximizing Outreach through Events, Webinars, and Engaging Content",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Technology"
+  },
+  {
+    "id": 4,
+    "img": "blog4.png",
+    "user": "Esther Howard",
+    "date": "March 22, 2024",
+    "title": "How Autonomous AI for Code Drives EU DORA Compliance",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Compliance"
+  },
+  {
+    "id": 5,
+    "img": "blog5.png",
+    "user": "Eleanor Pena",
+    "date": "February 30, 2024",
+    "title": "Automating AI-Powered Unit Test Generation and Maintenance",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Developer"
+  },
+  {
+    "id": 6,
+    "img": "blog6.png",
+    "user": "Theresa Webb",
+    "date": "January 14, 2024",
+    "title": "Exploring the Next Generation of AI Technology for Coding",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Webinar"
+  },
+  {
+    "id": 7,
+    "img": "blog7.png",
+    "user": "Theresa Webb",
+    "date": "January 10, 2024",
+    "title": "Enhance Personalization with AI-Driven CRM Emails",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Artificial Intelligence"
+  },
+  {
+    "id": 8,
+    "img": "blog8.png",
+    "user": "Marvin McKinney",
+    "date": "January 4, 2024",
+    "title": "The Transformative Power of AI in Sales Forecasting",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Email Marketing"
+  },
+  {
+    "id": 9,
+    "img": "blog2.png",
+    "user": "Kathryn Murphy",
+    "date": "June 10, 2024",
+    "title": "The Transformative Power of AI in Sales Forecasting",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Email Marketing"
+  },
+  {
+    "id": 10,
+    "img": "blog2.png",
+    "user": "Kathryn Murphy",
+    "date": "June 10, 2024",
+    "title": "The Transformative Power of AI in Sales Forecasting",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Email Marketing"
+  },
+  {
+    "id": 11,
+    "img": "blog2.png",
+    "user": "Esther Howard",
+    "date": "March 22, 2024",
+    "title": "How Autonomous AI for Code Drives EU DORA Compliance",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Compliance"
+  },
+  {
+    "id": 12,
+    "img": "blog8.png",
+    "user": "Marvin McKinney",
+    "date": "January 4, 2024",
+    "title": "Getting Started with AI-Powered Unit Testing Using GitHub Actions",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Technology"
+  },
+  {
+    "id": 13,
+    "img": "blog6.png",
+    "user": "Theresa Webb",
+    "date": "January 10, 2024",
+    "title": "AI for Developers Harnessing the On-Premise Advantage",
+    "details": "Imagine a salesperson who boosted their engagement rates by using customer insights and AI-driven personalization tools and chatbots, transforming their email marketing approach overnight.",
+    "btn": "Security"
+  }
+]
