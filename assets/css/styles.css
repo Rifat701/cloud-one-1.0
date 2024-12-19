@@ -52,3 +52,26 @@ button svg {
 .next-slide:hover {
   opacity: 0.7;
 }
+
+.textone-overlay::after {
+  content: '';
+  background: url('/assets/home-two/text-overlay.svg');
+  position: absolute;
+  width: 207px;
+  height: 200px;
+  top: 35px;
+  right: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+.texttwo-overlay::after {
+  content: '';
+  background: url('/assets/home-two/texttwo-overlay.svg');
+  position: absolute;
+  width: 174px;
+  height: 200px;
+  top: 20px;
+  right: 8px;
+  z-index: -1;
+  background-repeat: no-repeat;
+}

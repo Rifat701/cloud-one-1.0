@@ -289,9 +289,13 @@
             We are fastrans
           </h5>
           <h2
-            class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px] text-center md:text-left"
+            class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px] text-center md:text-left relative"
           >
-            Transforming Industries <br class="hidden md:block" />
+            Transforming
+            <div class="textone-overlay inline-block relative z-[999]">
+              Industries
+            </div>
+            <br class="hidden md:block" />
             with Saas Innovations
           </h2>
           <p class="text-[#49494B] text-center md:text-left">
@@ -372,7 +376,10 @@
         class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-center mt-[10px] mb-[60px]"
       >
         Streamline Operations with <br class="hidden md:block" />
-        Saas Solutions
+        Saas
+        <div class="textone-overlay inline-block relative z-[999]">
+          Solutions
+        </div>
       </h2>
 
       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[30px]">
@@ -874,16 +881,20 @@
 
     <div class="container mx-auto px-5 py-[120px]">
       <div class="flex flex-wrap justify-between items-start">
-        <div class="flex flex-col justify-center md:justify-start items-center">
+        <div class="flex flex-col justify-center md:justify-start items-start">
           <h5
-            class="text-[#FF9A66] font-bold text-[14px] text-center md:text-left uppercase"
+            class="text-[#FF9A66] font-bold text-[14px] text-left md:text-left uppercase"
           >
             Our services
           </h5>
           <h2
             class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] text-center md:text-left"
           >
-            Driving Growth Through <br class="hidden md:block" />
+            Driving Growth
+            <div class="texttwo-overlay inline-block relative z-[999]">
+              Through
+            </div>
+            <br class="hidden md:block" />
             Saas Advancements
           </h2>
           <div
@@ -1222,7 +1233,11 @@
           <h2
             class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-left mb-[20px]"
           >
-            Revolutionizing Business <br class="hidden md:block" />
+            Revolutionizing
+            <div class="texttwo-overlay inline-block relative z-[999]">
+              Business
+            </div>
+            <br class="hidden md:block" />
             Processes with Saas
           </h2>
           <div class="flex justify-between items-start gap-10">
@@ -1383,8 +1398,11 @@
           <h2
             class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-left mb-[20px]"
           >
-            Revolutionizing Business <br class="hidden md:block" />
-            Processes with Saas
+            Efficiency and Agility <br class="hidden md:block" />
+            <div class="texttwo-overlay inline-block relative z-[999]">
+              through
+            </div>
+            Saas Solutions
           </h2>
           <p class="text-[#1B1C1E]">
             Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
@@ -1409,7 +1427,11 @@
       <h2
         class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-center mt-[10px] mb-[60px]"
       >
-        Unlocking Business Success <br class="hidden md:block" />
+        Unlocking
+        <div class="texttwo-overlay inline-block relative z-[999]">
+          Business
+        </div>
+        Success <br class="hidden md:block" />
         with Saas
       </h2>
 
@@ -1850,13 +1872,16 @@
           <h5 class="text-[#FF9A66] font-bold text-[14px] uppercase">
             Testimonial
           </h5>
-          <!-- Testimonial Content Slider -->
           <div class="testimonial-content">
             <div class="testimonial-slide active">
               <h2
                 class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px]"
               >
-                Driving Transforms <br class="hidden md:block" />
+                Driving
+                <div class="texttwo-overlay inline-block relative z-[999]">
+                  Transforms
+                </div>
+                <br class="hidden md:block" />
                 with Saas
               </h2>
               <p class="text-[#1B1C1E]">
@@ -1869,7 +1894,10 @@
               <h2
                 class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px]"
               >
-                Transform Your <br class="hidden md:block" />
+                <div class="texttwo-overlay inline-block relative z-[999]">
+                  Transform
+                </div>
+                Your <br class="hidden md:block" />
                 Business with Cloud
               </h2>
               <p class="text-[#1B1C1E]">
@@ -1878,7 +1906,6 @@
                 and adapt to changing market demands quickly
               </p>
             </div>
-            <!-- Add more slides as needed -->
           </div>
 
           <div class="flex justify-start items-center gap-[20px] mt-[50px]">
@@ -2303,126 +2330,6 @@
       </div>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const slides = document.querySelectorAll('.testimonial-slide');
-        const images = document.querySelectorAll('.testimonial-image');
-        const prevButton = document.querySelector('.prev-slide');
-        const nextButton = document.querySelector('.next-slide');
-        let currentIndex = 0;
-
-        function showSlide(index) {
-          // Hide all slides and images
-          slides.forEach((slide) => slide.classList.remove('active'));
-          images.forEach((image) => image.classList.remove('active'));
-
-          // Show current slide and image
-          slides[index].classList.add('active');
-          images[index].classList.add('active');
-        }
-
-        function nextSlide() {
-          currentIndex = (currentIndex + 1) % slides.length;
-          showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-          showSlide(currentIndex);
-        }
-
-        // Add click event listeners
-        prevButton.addEventListener('click', prevSlide);
-        nextButton.addEventListener('click', nextSlide);
-
-        // Optional: Auto-play
-        setInterval(nextSlide, 5000);
-      });
-    </script>
-
-    <script>
-      const counterElement = document.getElementById('counter');
-      const targetNumber = 36;
-      const duration = 2000; // 2 seconds
-      const steps = 60;
-      const increment = targetNumber / steps;
-      let current = 0;
-
-      function updateCounter() {
-        current += increment;
-        if (current > targetNumber) {
-          current = targetNumber;
-        }
-        counterElement.textContent = Math.round(current);
-
-        if (current < targetNumber) {
-          requestAnimationFrame(updateCounter);
-        }
-      }
-
-      // Start the counter when element is in view
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            updateCounter();
-            observer.unobserve(entry.target);
-          }
-        });
-      });
-
-      observer.observe(counterElement);
-    </script>
-
-    <script>
-      // Progress counters
-      function createProgressCounter(elementId, targetValue) {
-        const element = document.getElementById(elementId);
-        const duration = 2000; // 2 seconds
-        const steps = 60;
-        const increment = targetValue / steps;
-        let current = 0;
-        let startTime = null;
-
-        function updateProgress(timestamp) {
-          if (!startTime) startTime = timestamp;
-          const progress = timestamp - startTime;
-          const percentage = Math.min(progress / duration, 1);
-
-          current = targetValue * percentage;
-          element.textContent = Math.round(current) + '%';
-
-          if (progress < duration) {
-            requestAnimationFrame(updateProgress);
-          }
-        }
-
-        // Start counter when element is in view
-        new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              requestAnimationFrame(updateProgress);
-              entry.target.disconnect();
-            }
-          });
-        }).observe(element);
-      }
-
-      // Initialize both progress counters
-      createProgressCounter('progress1', 65);
-      createProgressCounter('progress2', 75);
-    </script>
-
-    <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        if (menu.classList.contains('-right-full')) {
-          menu.classList.remove('-right-full');
-          menu.classList.add('right-0');
-        } else {
-          menu.classList.remove('right-0');
-          menu.classList.add('-right-full');
-        }
-      }
-    </script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>

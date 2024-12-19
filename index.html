@@ -2427,56 +2427,5 @@
     </div>
 
     <script src="assets/js/custom.js"></script>
-
-    <script>
-      function toggleAccordion(id) {
-        // Get the content element
-        const content = document.getElementById(id);
-
-        // Get the button that triggered this
-        const button = content.previousElementSibling;
-        const svg = button.querySelector('svg');
-
-        // If opening this accordion
-        if (content.classList.contains('hidden')) {
-          // First close any open accordions
-          const allContents = document.querySelectorAll('[id^="accordion"]');
-          allContents.forEach((el) => {
-            if (!el.classList.contains('hidden')) {
-              el.style.maxHeight = '0px';
-              el.classList.add('hidden');
-              const otherButton = el.previousElementSibling;
-              const otherSvg = otherButton.querySelector('svg');
-              otherSvg.style.transform = 'rotate(0)';
-            }
-          });
-
-          // Then open this accordion
-          content.classList.remove('hidden');
-          content.style.maxHeight = content.scrollHeight + 'px';
-          svg.style.transform = 'rotate(180deg)';
-        } else {
-          // Closing this accordion
-          content.style.maxHeight = '0px';
-          setTimeout(() => {
-            content.classList.add('hidden');
-          }, 200); // Match this with the transition duration
-          svg.style.transform = 'rotate(0)';
-        }
-      }
-    </script>
-
-    <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        if (menu.classList.contains('-right-full')) {
-          menu.classList.remove('-right-full');
-          menu.classList.add('right-0');
-        } else {
-          menu.classList.remove('right-0');
-          menu.classList.add('-right-full');
-        }
-      }
-    </script>
   </body>
 </html>
