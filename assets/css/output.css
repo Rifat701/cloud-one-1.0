@@ -2383,6 +2383,10 @@ input.tab:checked + .tab-content,
   margin-top: 74px;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
