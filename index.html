@@ -17,9 +17,11 @@
       rel="stylesheet"
     />
     <link rel="icon" href="/assets/home-one/favicon.svg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Cloud One</title>
   </head>
   <body class="bg-[#FFFBE8] relative">
+    <!---------------- LARGE DEVICE NAVBAR START ---------------->
     <div class="px-5 pt-[30px]">
       <div class="hidden md:hidden lg:block">
         <div class="flex justify-between items-center container mx-auto">
@@ -33,39 +35,39 @@
 
             <div class="flex justify-start items-center gap-10 ml-14">
               <a
-                href="#"
+                href="#hero"
                 class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="#about"
                 class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                 >About Us
               </a>
               <a
-                href="#"
+                href="#service"
                 class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                 >Services
               </a>
               <a
-                href="#"
+                href="#why-us"
                 class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
-                >Projects
+                >Why us
               </a>
               <a
-                href="#"
+                href="#blog"
                 class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                 >Blog
               </a>
               <a
-                href="#"
+                href="#pricing"
                 class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
               >
-                Page
+                Pricing
               </a>
               <a
-                href="#"
+                href="#contact"
                 class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                 >Contact
               </a>
@@ -115,6 +117,9 @@
         </div>
       </div>
     </div>
+    <!---------------- LARGE DEVICE NAVBAR END ---------------->
+
+    <!---------------- SMALL DEVICE NAVBAR START ---------------->
     <div
       id="mobileMenu"
       class="bg-[#1B1C1E] h-[100vh] w-[100vw] fixed top-0 -right-full md:hidden block p-5 transition-all duration-300 ease-in-out z-50"
@@ -163,16 +168,26 @@
         </svg>
       </a>
     </div>
+    <!---------------- SMALL DEVICE NAVBAR END ---------------->
 
-    <div class="py-32 container mx-auto px-5">
+    <!---------------- HERO START ---------------->
+    <div class="py-32 container mx-auto px-5" id="hero">
       <div class="flex flex-wrap justify-center items-center gap-[60px]">
         <div class="mt-[-30px]">
-          <h1 class="font-bold text-[65px] text-[#1B1C1E] leading-[70px]">
+          <h1
+            class="font-bold text-[65px] text-[#1B1C1E] leading-[70px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Seamless <br class="hidden lg:block" />
             solutions for <br class="hidden lg:block" />
             your business
           </h1>
-          <p class="font-normal text-[#49494B] mt-9 mb-14">
+          <p
+            class="font-normal text-[#49494B] mt-9 mb-14"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             As an AI language model, I don't have personal opinions or
             <br class="hidden lg:block" />
             points of view designe However I can tell you that
@@ -180,6 +195,8 @@
           <div class="flex justify-start items-center md:gap-[20px] gap-1">
             <a
               href="#"
+              data-aos="fade-up"
+              data-aos-duration="1000"
               class="flex justify-center items-center gap-[10px] border-2 border-[#1B1C1E] bg-[#1B1C1E] rounded py-[20px] px-[30px] ease-out duration-300 hover:bg-[#FFA970]"
             >
               <span class="font-semibold text-[#fff]"> Read more </span>
@@ -198,6 +215,8 @@
             </a>
             <a
               href="#"
+              data-aos="fade-up"
+              data-aos-duration="1200"
               class="flex justify-center items-center gap-[10px] border-2 border-[#1B1C1E] rounded py-[20px] px-[30px] ease-out duration-300 hover:bg-[#FFA970]"
             >
               <span class="font-semibold text-[#1B1C1E]"> Get a quote </span>
@@ -222,6 +241,8 @@
             <div class="flex flex-col justify-start items-start gap-[20px]">
               <div
                 class="py-[20px] pl-[20px] pr-24 border-2 border-[#1B1C1E] rounded bg-[#FECE01]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               >
                 <div class="flex justify-start items-center gap-6">
                   <div class="py-4 px-[20px] bg-[#E8BD04] rounded">
@@ -261,6 +282,8 @@
                 src="assets/home-one/hero-one.svg"
                 class="w-[364px] h-[476px]"
                 alt=""
+                data-aos="fade-up"
+                data-aos-duration="1000"
               />
             </div>
             <div class="flex flex-col justify-start items-start gap-[20px]">
@@ -268,11 +291,15 @@
                 src="assets/home-one/hero-two.svg"
                 class="w-[360px] h-[412px]"
                 alt=""
+                data-aos="fade-up"
+                data-aos-duration="1000"
               />
               <img
                 src="assets/home-one/hero three.svg"
                 class="w-[225px] h-[100px] m-auto mt-[72px]"
                 alt=""
+                data-aos="fade-up"
+                data-aos-duration="1000"
               />
             </div>
           </div>
@@ -282,16 +309,26 @@
           src="assets/home-one/hero-img-mobile.png"
           class="md:hidden block"
           alt=""
+          data-aos="fade-up"
+          data-aos-duration="1000"
         />
       </div>
     </div>
+    <!---------------- HERO END ---------------->
 
-    <div class="container mx-auto px-5">
-      <h5 class="text-[#FF9A66] font-bold text-[14px] text-center uppercase">
+    <!---------------- SERVICE START ---------------->
+    <div class="container mx-auto px-5" id="service">
+      <h5
+        class="text-[#FF9A66] font-bold text-[14px] text-center uppercase"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Latest service
       </h5>
       <h2
         class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-center mt-[10px] mb-[60px]"
+        data-aos="fade-up"
+        data-aos-duration="1200"
       >
         Unleash the power of the <br class="hidden md:block" />
         cloud with CloudOne
@@ -300,6 +337,8 @@
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
         <div
           class="py-[50px] px-[40px] border-2 border-[#1B1C1E] rounded bg-[#FFFFFF] hover:bg-[#FFCF01] ease-out duration-300"
+          data-aos="fade-up"
+          data-aos-duration="1200"
         >
           <svg
             width="65"
@@ -357,6 +396,8 @@
 
         <div
           class="py-[50px] px-[40px] border-2 border-[#1B1C1E] rounded bg-[#FFFFFF] hover:bg-[#FFCF01] ease-out duration-300"
+          data-aos="fade-up"
+          data-aos-duration="1400"
         >
           <svg
             width="65"
@@ -430,6 +471,8 @@
 
         <div
           class="py-[50px] px-[40px] border-2 border-[#1B1C1E] rounded bg-[#FFFFFF] hover:bg-[#FFCF01] ease-out duration-300"
+          data-aos="fade-up"
+          data-aos-duration="1600"
         >
           <svg
             width="65"
@@ -498,15 +541,23 @@
         </div>
       </div>
     </div>
+    <!---------------- SERVICE END ---------------->
 
-    <div class="container mx-auto pt-[100px] pb-[120px] px-5">
+    <!---------------- ABOUT START ---------------->
+    <div class="container mx-auto pt-[100px] pb-[120px] px-5" id="about">
       <div class="flex flex-wrap justify-between items-center">
         <div class="flex flex-col justify-start md:items-start items-center">
-          <h5 class="text-[#FF9A66] font-bold text-[14px] uppercase">
-            Latest service
+          <h5
+            class="text-[#FF9A66] font-bold text-[14px] uppercase"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            about us
           </h5>
           <h2
             class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px] text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             Simplify your <br class="hidden md:block" />
             busiess with the <br class="hidden md:block" />
@@ -514,6 +565,8 @@
           </h2>
           <p
             class="text-[#49494B] font-normal leading-[26px] text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-duration="1400"
           >
             Lorem ipsum dolor sit amet consectetur. Amet lectus mi
             <br class="hidden md:block" />
@@ -524,6 +577,8 @@
           <a
             href="#"
             class="mt-[30px] flex justify-center items-center gap-[10px] rounded bg-[#FF9A66] py-[20px] px-[30px] btn-hover ease-out duration-300"
+            data-aos="fade-up"
+            data-aos-duration="1600"
           >
             <span class="text-[#1B1C1E] font-semibold">Contact us</span>
             <svg
@@ -544,16 +599,26 @@
           src="assets/home-one/about-us.png"
           class="mt-[30px] md:mt-0"
           alt=""
+          data-aos="fade-up"
+          data-aos-duration="1000"
         />
       </div>
     </div>
+    <!---------------- ABOUT END ---------------->
 
-    <div class="container mx-auto pb-[120px] px-5">
-      <h5 class="text-[#FF9A66] font-bold text-[14px] text-center uppercase">
+    <!---------------- WHY US START ---------------->
+    <div class="container mx-auto pb-[120px] px-5" id="why-us">
+      <h5
+        class="text-[#FF9A66] font-bold text-[14px] text-center uppercase"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Why strat us
       </h5>
       <h2
         class="text-[#1B1C1E] text-[48px] font-medium leading-[48px] text-center mt-[10px] mb-[60px]"
+        data-aos="fade-up"
+        data-aos-duration="1200"
       >
         Elevate your business to new <br class="hidden md:block" />
         heights CloudOne
@@ -562,7 +627,11 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[60px] md:gap-[132px]"
       >
-        <div class="flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div
             class="flex justify-center items-center p-6 bg-[#FFCF01] border border-[#1B1C1E] rounded-full"
           >
@@ -606,7 +675,11 @@
             on-demand access
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           <div
             class="flex justify-center items-center p-6 bg-[#FFCF01] border border-[#1B1C1E] rounded-full"
           >
@@ -698,7 +771,11 @@
             on-demand access
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+        >
           <div
             class="flex justify-center items-center p-6 bg-[#FFCF01] border border-[#1B1C1E] rounded-full"
           >
@@ -751,7 +828,11 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-[60px] md:gap-[132px] mt-[60px]"
       >
-        <div class="flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div
             class="flex justify-center items-center p-6 bg-[#FFCF01] border border-[#1B1C1E] rounded-full"
           >
@@ -831,7 +912,11 @@
             on-demand access
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           <div
             class="flex justify-center items-center p-6 bg-[#FFCF01] border border-[#1B1C1E] rounded-full"
           >
@@ -860,7 +945,11 @@
             on-demand access
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center">
+        <div
+          class="flex flex-col justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+        >
           <div
             class="flex justify-center items-center p-6 bg-[#FFCF01] border border-[#1B1C1E] rounded-full"
           >
@@ -954,14 +1043,22 @@
         </div>
       </div>
     </div>
+    <!---------------- WHY US END ---------------->
 
-    <div class="bg-[#1B1C1E] pt-[120px] pb-[330px] px-5">
+    <!---------------- PRICING START ---------------->
+    <div class="bg-[#1B1C1E] pt-[120px] pb-[330px] px-5" id="pricing">
       <div class="container mx-auto">
-        <h5 class="text-[#FF9A66] font-bold text-[14px] text-center uppercase">
+        <h5
+          class="text-[#FF9A66] font-bold text-[14px] text-center uppercase"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           OUR PRICING PLANS
         </h5>
         <h2
           class="text-[#fff] text-[48px] font-medium leading-[48px] text-center mt-[10px] mb-[116px]"
+          data-aos="fade-up"
+          data-aos-duration="1200"
         >
           Simplify your business with <br class="hidden md:block" />
           the cloud services
@@ -970,6 +1067,8 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
           <div
             class="pt-[100px] px-[40px] pb-[35px] rounded-[10px] bg-[#fff] relative mt-14 md:mt-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             <div
               class="rounded-full bg-[#FFCF01] flex justify-center items-center p-6 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -1072,6 +1171,8 @@
           </div>
           <div
             class="pt-[100px] px-[40px] pb-[35px] rounded-[10px] bg-[#fff] relative mt-14 md:mt-0"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             <div
               class="rounded-full bg-[#FFCF01] flex justify-center items-center p-6 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -1217,6 +1318,8 @@
           </div>
           <div
             class="pt-[100px] px-[40px] pb-[35px] rounded-[10px] bg-[#fff] relative mt-14 md:mt-0"
+            data-aos="fade-up"
+            data-aos-duration="1400"
           >
             <div
               class="rounded-full bg-[#FFCF01] flex justify-center items-center p-6 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
@@ -1299,22 +1402,34 @@
         </div>
       </div>
     </div>
+    <!---------------- PRICING END ---------------->
 
-    <div class="container mx-auto">
+    <!---------------- TESTIMONIAL START ---------------->
+    <div class="container mx-auto" id="contact">
       <div
         class="bg-[url('/assets/home-one/cta-bg.png')] bg-cover bg-center bg-no-repeat py-20 px-5 mt-[-210px]"
       >
         <h2
           class="text-[48px] font-medium text-[#1B1C1E] text-center leading-[58px]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
           Unleash the potential of the cloud
         </h2>
-        <p class="mt-[20px] mb-[40px] text-[#1B1C1E] text-center">
+        <p
+          class="mt-[20px] mb-[40px] text-[#1B1C1E] text-center"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
           It is a long established fact that a reader will be distracted by the
           readable content of a <br class="hidden md:block" />
           page when looking at its layout
         </p>
-        <div class="flex flex-wrap justify-center items-center gap-[20px]">
+        <div
+          class="flex flex-wrap justify-center items-center gap-[20px]"
+          data-aos="fade-up"
+          data-aos-duration="1600"
+        >
           <input
             type="email"
             name="email"
@@ -1330,13 +1445,23 @@
         </div>
       </div>
     </div>
+    <!---------------- TESTIMONIAL END ---------------->
 
+    <!---------------- WHY CHOSE US START ---------------->
     <div class="container mx-auto py-[120px] px-5">
       <div class="flex flex-wrap justify-between items-center">
         <div class="flex flex-col justify-start md:items-start items-center">
-          <h5 class="text-[#FF9A66] text-[14px] font-bold">WHY CHOSE US</h5>
+          <h5
+            class="text-[#FF9A66] text-[14px] font-bold"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            WHY CHOSE US
+          </h5>
           <h3
             class="font-medium text-[48px] leading-[58px] mt-[10px] mb-[30px] text-[#1B1C1E] text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             Streamline your operations <br class="hidden md:block" />
             with cloud services
@@ -1344,8 +1469,12 @@
 
           <div
             class="flex flex-wrap justify-start items-start gap-3 md:gap-[58px] border-b border-[#D0D0D0] pb-[26px]"
+            data-aos="fade-up"
+            data-aos-duration="1600"
           >
-            <div class="flex flex-col justify-start items-start gap-[10px]">
+            <div
+              class="flex flex-col justify-start items-start gap-[10px]""
+            >
               <div class="flex justify-start items-center gap-3">
                 <div class="p-1 bg-[#FF9A66] rounded-full">
                   <svg
@@ -1399,7 +1528,9 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col justify-start items-start gap-[10px]">
+            <div
+              class="flex flex-col justify-start items-start gap-[10px]"
+            >
               <div class="flex justify-start items-center gap-3">
                 <div class="p-1 bg-[#FF9A66] rounded-full">
                   <svg
@@ -1456,10 +1587,11 @@
           </div>
 
           <div
-            class="flex flex-wrap justify-start items-center gap-12 mt-[40px]"
+            class="flex flex-wrap justify-start items-center gap-12 mt-[40px]"  
           >
             <div
-              class="flex flex-col justify-start md:items-start items-center"
+              class="flex flex-col justify-start md:items-start items-center" data-aos="fade-up"
+            data-aos-duration="1800"
             >
               <svg
                 width="65"
@@ -1551,6 +1683,8 @@
             </svg>
             <div
               class="flex flex-col justify-start md:items-start items-center"
+              data-aos="fade-up"
+            data-aos-duration="2200"
             >
               <svg
                 width="65"
@@ -1602,24 +1736,33 @@
           src="assets/home-one/why-us.png"
           class="mt-[40px] md:mt-0"
           alt=""
+          data-aos="fade-up"
+            data-aos-duration="1000"
         />
       </div>
     </div>
+    <!---------------- WHY CHOSE US END ---------------->
 
+    <!---------------- FAQ START ---------------->
     <div class="container mx-auto px-5">
       <div class="flex flex-wrap justify-between items-start gap-0">
         <div class="flex flex-col justify-start md:items-start items-center">
-          <h5 class="text-[#FF9A66] text-[14px] font-bold">Have any qustuon</h5>
+          <h5 class="text-[#FF9A66] text-[14px] font-bold" data-aos="fade-up"
+            data-aos-duration="1000">Have any qustuon</h5>
           <h3
             class="font-medium text-[48px] leading-[58px] mt-[10px] text-[#1B1C1E] text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             Stay ahead of the competition <br class="hidden md:block" />
             with CloudOne
           </h3>
-          <img src="assets/home-one/qustuon.png" class="mt-[53px]" alt="" />
+          <img src="assets/home-one/qustuon.png" class="mt-[53px]" alt="" data-aos="fade-up"
+            data-aos-duration="1400" />
         </div>
         <div class="flex flex-col justify-start items-end mt-[74px]">
-          <p class="text-[#1B1C1E] font-medium text-center md:text-left">
+          <p class="text-[#1B1C1E] font-medium text-center md:text-left" data-aos="fade-up"
+            data-aos-duration="1000">
             It is a long established fact that a reader will be distracte the
             readable <br class="hidden md:block" />
             content of a page when looking at its layout. Many desktp publishing
@@ -1631,7 +1774,8 @@
             class="flex flex-col justify-start items-start gap-[30px] mt-[60px]"
           >
             <!-- First Accordion -->
-            <div class="w-full border border-[#1B1C1E] rounded">
+            <div class="w-full border border-[#1B1C1E] rounded" data-aos="fade-up"
+            data-aos-duration="1200">
               <button
                 onclick="toggleAccordion('accordion1')"
                 class="w-full py-[20px] px-[40px] flex justify-between items-center gap-[79px]"
@@ -1671,7 +1815,8 @@
             </div>
 
             <!-- Second Accordion -->
-            <div class="w-full border border-[#1B1C1E] rounded">
+            <div class="w-full border border-[#1B1C1E] rounded" data-aos="fade-up"
+            data-aos-duration="1400">
               <button
                 onclick="toggleAccordion('accordion2')"
                 class="w-full py-[20px] px-[40px] flex justify-between items-center gap-[79px]"
@@ -1712,7 +1857,8 @@
             </div>
 
             <!-- Third Accordion -->
-            <div class="w-full border border-[#1B1C1E] rounded">
+            <div class="w-full border border-[#1B1C1E] rounded" data-aos="fade-up"
+            data-aos-duration="1600">
               <button
                 onclick="toggleAccordion('accordion3')"
                 class="w-full py-[20px] px-[40px] flex justify-between items-center gap-[79px]"
@@ -1752,7 +1898,8 @@
             </div>
 
             <!-- Fourth Accordion -->
-            <div class="w-full border border-[#1B1C1E] rounded">
+            <div class="w-full border border-[#1B1C1E] rounded" data-aos="fade-up"
+            data-aos-duration="1800">
               <button
                 onclick="toggleAccordion('accordion4')"
                 class="w-full py-[20px] px-[40px] flex justify-between items-center gap-[79px]"
@@ -1794,7 +1941,9 @@
         </div>
       </div>
     </div>
+    <!---------------- FAQ END ---------------->
 
+    <!---------------- SAS START ---------------->
     <div class="container mx-auto px-5 pt-[116px] pb-[120px]">
       <div
         class="bg-[url('/assets/home-one/sass.png')] bg-cover bg-center bg-no-repeat py-[77px] px-[74px] rounded border border-[#1B1C1E]"
@@ -1805,11 +1954,15 @@
           <div class="flex flex-col justify-start md:items-start items-center">
             <h4
               class="text-[#1B1C1E] font-semibold mt-[10px] text-center md:text-left"
+              data-aos="fade-up"
+            data-aos-duration="1000"
             >
               Game with Sass
             </h4>
             <h3
               class="text-[#1B1C1E] font-medium text-[48px] leading-[58px] text-center md:text-left"
+              data-aos="fade-up"
+            data-aos-duration="1200"
             >
               Supercharge Your Workflow <br class="hidden md:block" />
               with Our Sass Tools
@@ -1818,6 +1971,8 @@
           <a
             href="#"
             class="mt-[40px] flex justify-center items-center gap-[10px] rounded bg-[#FF9A66] py-[20px] px-[30px] btn-hover ease-out duration-300"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             <span class="text-[#1B1C1E] font-semibold">Read more</span>
             <svg
@@ -1836,20 +1991,25 @@
         </div>
       </div>
     </div>
+    <!---------------- SAS END ---------------->
 
-    <div class="container mx-auto px-5 pb-[120px]">
-      <h5 class="text-[#FF9A66] font-bold text-[14px] text-center uppercase">
+    <!---------------- BLOG START ---------------->
+    <div class="container mx-auto px-5 pb-[120px]" id="blog">
+      <h5 class="text-[#FF9A66] font-bold text-[14px] text-center uppercase" data-aos="fade-up"
+            data-aos-duration="1000">
         Latest Blog And news
       </h5>
       <h2
-        class="text-[#1B1C1E] text-[48px] font-medium leading-[48px] text-center mt-[10px] mb-[60px]"
+        class="text-[#1B1C1E] text-[48px] font-medium leading-[48px] text-center mt-[10px] mb-[60px]" data-aos="fade-up"
+            data-aos-duration="1200"
       >
         Seamless cloud solutions for <br class="hidden md:block" />
         your business
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
         <div
-          class="border border-[#1B1C1E] bg-[#fff] hover:bg-[#FFCF01] ease-out duration-300 rounded"
+          class="border border-[#1B1C1E] bg-[#fff] hover:bg-[#FFCF01] ease-out duration-300 rounded" data-aos="fade-up"
+            data-aos-duration="1000"
         >
           <img src="assets/home-one/blog-one.png" class="w-full" alt="" />
           <div class="pt-6 px-[30px] pb-[40px]">
@@ -1918,6 +2078,8 @@
         </div>
         <div
           class="border border-[#1B1C1E] bg-[#fff] hover:bg-[#FFCF01] ease-out duration-300 rounded"
+          data-aos="fade-up"
+            data-aos-duration="1200"
         >
           <img src="assets/home-one/blog-two.png" class="w-full" alt="" />
           <div class="pt-6 px-[30px] pb-[40px]">
@@ -1986,6 +2148,8 @@
         </div>
         <div
           class="border border-[#1B1C1E] bg-[#fff] hover:bg-[#FFCF01] ease-out duration-300 rounded"
+          data-aos="fade-up"
+            data-aos-duration="1400"
         >
           <img src="assets/home-one/blog-three.png" class="w-full" alt="" />
           <div class="pt-6 px-[30px] pb-[40px]">
@@ -2054,7 +2218,9 @@
         </div>
       </div>
     </div>
+    <!---------------- BLOG END ---------------->
 
+    <!---------------- FOOTER START ---------------->
     <div class="bg-[#1B1C1E] pt-20 pb-[35px]">
       <div class="container mx-auto px-5">
         <div
@@ -2385,7 +2551,29 @@
         </div>
       </div>
     </div>
+    <!---------------- FOOTER END ---------------->
 
     <script src="assets/js/custom.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+    <script>
+      AOS.init({
+        once: true
+      });
+
+      const lenis = new Lenis({
+    smooth: true
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
   </body>
 </html>
