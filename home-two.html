@@ -17,12 +17,15 @@
       rel="stylesheet"
     />
     <link rel="icon" href="/assets/home-one/favicon.svg" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Cloud One</title>
   </head>
   <body class="bg-[#FFFBE8]">
     <div
       class="bg-[url(assets/home-two/hero-bg.svg)] bg-cover bg-center bg-no-repeat pt-[30px] pb-[120px]"
     >
+      <!---------------- LARGE DEVICE NAVBAR START ---------------->
       <div class="px-5">
         <div class="hidden md:hidden lg:block">
           <div class="flex justify-between items-center container mx-auto">
@@ -36,39 +39,39 @@
 
               <div class="flex justify-start items-center gap-10 ml-14">
                 <a
-                  href="#"
+                  href="#hero"
                   class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                 >
                   Home
                 </a>
                 <a
-                  href="#"
+                  href="#about-us"
                   class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                   >About Us
                 </a>
                 <a
-                  href="#"
+                  href="#services"
                   class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                   >Services
                 </a>
                 <a
-                  href="#"
+                  href="#features"
                   class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
-                  >Projects
+                  >Features
                 </a>
                 <a
-                  href="#"
+                  href="#pricing"
                   class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
-                  >Blog
+                  >Priceing
                 </a>
                 <a
-                  href="#"
+                  href="#testimonial"
                   class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                 >
-                  Page
+                  Testimonial
                 </a>
                 <a
-                  href="#"
+                  href="#contact"
                   class="font-semibold text-[#1B1C1E] ease-out duration-300 hover:text-[#FF9A66]"
                   >Contact
                 </a>
@@ -124,6 +127,9 @@
           </div>
         </div>
       </div>
+      <!---------------- LARGE DEVICE NAVBAR START ---------------->
+
+      <!---------------- SMALL DEVICE NAVBAR START ---------------->
       <div
         id="mobileMenu"
         class="bg-[#1B1C1E] h-[100vh] w-[100vw] fixed top-0 -right-full md:hidden block p-5 transition-all duration-300 ease-in-out z-50"
@@ -145,13 +151,25 @@
           </a>
         </div>
         <div class="flex flex-col justify-start items-start gap-4 mt-5">
-          <a href="#" class="font-semibold text-[20px] text-[#fff]">Home</a>
-          <a href="#" class="font-semibold text-[20px] text-[#fff]">About Us</a>
-          <a href="#" class="font-semibold text-[20px] text-[#fff]">Services</a>
-          <a href="#" class="font-semibold text-[20px] text-[#fff]">Projects</a>
-          <a href="#" class="font-semibold text-[20px] text-[#fff]">Blog</a>
-          <a href="#" class="font-semibold text-[20px] text-[#fff]">Page</a>
-          <a href="#" class="font-semibold text-[20px] text-[#fff]">Contact</a>
+          <a href="#hero" class="font-semibold text-[20px] text-[#fff]">Home</a>
+          <a href="#about-us" class="font-semibold text-[20px] text-[#fff]"
+            >About Us</a
+          >
+          <a href="#service" class="font-semibold text-[20px] text-[#fff]"
+            >Services</a
+          >
+          <a href="#features" class="font-semibold text-[20px] text-[#fff]"
+            >Features</a
+          >
+          <a href="#pricing" class="font-semibold text-[20px] text-[#fff]"
+            >Priceing</a
+          >
+          <a href="#testimonial" class="font-semibold text-[20px] text-[#fff]"
+            >Testimonial</a
+          >
+          <a href="#contact" class="font-semibold text-[20px] text-[#fff]"
+            >Contact</a
+          >
         </div>
         <a
           href="#"
@@ -172,10 +190,14 @@
           </svg>
         </a>
       </div>
+      <!---------------- SMALL DEVICE NAVBAR END ---------------->
 
-      <div class="container mx-auto px-5 md:px-0 mt-[105px]">
+      <!---------------- HERO START ---------------->
+      <div class="container mx-auto px-5 md:px-0 mt-[105px]" id="hero">
         <h1
           class="text-[#1B1C1E] font-semibold text-[46px] md:text-[80px] flex flex-wrap items-center gap-4 leading-[44px] md:leading-[90px] mb-[54px]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
           <span>Transforming</span>
           <img
@@ -201,7 +223,11 @@
           >
         </h1>
 
-        <div class="flex flex-wrap justify-center items-center gap-[17px]">
+        <div
+          class="flex flex-wrap justify-center items-center gap-[17px]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <div class="relative">
             <img src="assets/home-two/hero-one.png" alt="" />
             <a
@@ -240,16 +266,24 @@
           <img src="assets/home-two/hero-two.png" alt="" />
         </div>
       </div>
+      <!---------------- HERO END ---------------->
     </div>
 
-    <div class="container mx-auto px-5 py-[120px]">
+    <!---------------- FASTRANS START ---------------->
+    <div class="container mx-auto px-5 py-[120px]" id="about-us">
       <div class="flex flex-wrap justify-between items-center">
         <div class="flex flex-col justify-start md:items-start items-center">
-          <h5 class="text-[#FF9A66] font-bold text-[14px] uppercase">
+          <h5
+            class="text-[#FF9A66] font-bold text-[14px] uppercase"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             We are fastrans
           </h5>
           <h2
             class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px] text-center md:text-left relative"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             Transforming
             <div class="textone-overlay inline-block relative z-[999]">
@@ -258,48 +292,58 @@
             <br class="hidden md:block" />
             with Saas Innovations
           </h2>
-          <p class="text-[#49494B] text-center md:text-left">
+          <p
+            class="text-[#49494B] text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
             Cloud Services provide scalable on-demand access to computer
             resources <br class="hidden md:block" />
             such as storage databaseenable businesses to reduce costs improve
           </p>
 
           <div class="growth-wrapper mt-[20px]">
-            <div
-              class="growth-update-one flex justify-start items-center md:gap-60 gap-36"
-            >
-              <h5 class="text-[#49494B] font-normal m-0">
-                Simplify your business
-              </h5>
-              <span id="progress1" class="text-[#49494B]">65%</span>
-            </div>
-            <div
-              class="growth-bar-one h-1.5 mt-[10px] bg-gray-200 rounded-full"
-            >
+            <div data-aos="fade-up" data-aos-duration="1600">
               <div
-                class="growth-per-one h-1.5 bg-[#FF9A66] rounded-full animate-fillBarsOne"
-              ></div>
+                class="growth-update-one flex justify-start items-center md:gap-60 gap-36"
+              >
+                <h5 class="text-[#49494B] font-normal m-0">
+                  Simplify your business
+                </h5>
+                <span id="progress1" class="text-[#49494B]">65%</span>
+              </div>
+              <div
+                class="growth-bar-one h-1.5 mt-[10px] bg-gray-200 rounded-full"
+              >
+                <div
+                  class="growth-per-one h-1.5 bg-[#FF9A66] rounded-full animate-fillBarsOne"
+                ></div>
+              </div>
             </div>
 
-            <div
-              class="growth-update-two flex justify-between items-center mt-[30px]"
-            >
-              <h5 class="text-[#49494B] font-normal m-0">
-                Experience the freedom
-              </h5>
-              <span id="progress2" class="text-[#49494B]">75%</span>
-            </div>
-            <div
-              class="growth-bar-two h-1.5 mt-[10px] bg-gray-200 rounded-full"
-            >
+            <div data-aos="fade-up" data-aos-duration="1800">
               <div
-                class="growth-per-two h-1.5 bg-[#FF9A66] rounded-full animate-fillBarsTwo"
-              ></div>
+                class="growth-update-two flex justify-between items-center mt-[30px]"
+              >
+                <h5 class="text-[#49494B] font-normal m-0">
+                  Experience the freedom
+                </h5>
+                <span id="progress2" class="text-[#49494B]">75%</span>
+              </div>
+              <div
+                class="growth-bar-two h-1.5 mt-[10px] bg-gray-200 rounded-full"
+              >
+                <div
+                  class="growth-per-two h-1.5 bg-[#FF9A66] rounded-full animate-fillBarsTwo"
+                ></div>
+              </div>
             </div>
           </div>
 
           <a
             href="#"
+            data-aos="fade-up"
+            data-aos-duration="2000"
             class="mt-[50px] btn-hover ease-out duration-300 flex justify-center items-center gap-[10px] py-[20px] px-[30px] rounded bg-[#FF9A66] border-shadow"
           >
             <h5 class="text-[#fff] font-semibold md:text-[16px] text-[12px]">
@@ -324,16 +368,26 @@
           src="assets/home-two/fastrans.png"
           class="mt-[30px] md:mt-0"
           alt=""
+          data-aos="fade-up"
+          data-aos-duration="1000"
         />
       </div>
     </div>
+    <!---------------- FASTRANS END ---------------->
 
+    <!---------------- lATEST SERVICE START ---------------->
     <div class="container mx-auto px-5">
-      <h5 class="text-[#FF9A66] font-bold text-[14px] text-center uppercase">
+      <h5
+        class="text-[#FF9A66] font-bold text-[14px] text-center uppercase"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         lATEST SERVICE
       </h5>
       <h2
         class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-center mt-[10px] mb-[60px]"
+        data-aos="fade-up"
+        data-aos-duration="1200"
       >
         Streamline Operations with <br class="hidden md:block" />
         Saas
@@ -345,6 +399,8 @@
       <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-[30px]">
         <div
           class="flex flex-col justify-center items-center py-[30px] px-[20px] border-shadow border border-[#1B1C1E] rounded bg-[#fff]"
+          data-aos="fade-up"
+          data-aos-duration="1400"
         >
           <div class="py-6 px-[22px] rounded border border-[#FF9A66]">
             <svg
@@ -385,6 +441,8 @@
         </div>
         <div
           class="flex flex-col justify-center items-center py-[30px] px-[20px] border-shadow border border-[#1B1C1E] rounded bg-[#fff]"
+          data-aos="fade-up"
+          data-aos-duration="1600"
         >
           <div class="py-6 px-[22px] rounded border border-[#FF9A66]">
             <svg
@@ -425,6 +483,8 @@
         </div>
         <div
           class="flex flex-col justify-center items-center py-[30px] px-[20px] border-shadow border border-[#1B1C1E] rounded bg-[#fff]"
+          data-aos="fade-up"
+          data-aos-duration="1800"
         >
           <div class="py-6 px-[22px] rounded border border-[#FF9A66]">
             <svg
@@ -481,6 +541,8 @@
         </div>
         <div
           class="flex flex-col justify-center items-center py-[30px] px-[20px] border-shadow border border-[#1B1C1E] rounded bg-[#fff]"
+          data-aos="fade-up"
+          data-aos-duration="2000"
         >
           <div class="py-6 px-[22px] rounded border border-[#FF9A66]">
             <svg
@@ -533,24 +595,34 @@
         </div>
       </div>
     </div>
+    <!---------------- lATEST SERVICE START ---------------->
 
-    <div class="bg-[#FF9A66] pt-[275px] pb-[196px] mt-[-155px]">
+    <!---------------- OUR FEATURES START ---------------->
+    <div class="bg-[#FF9A66] pt-[275px] pb-[196px] mt-[-155px]" id="features">
       <div class="container mx-auto px-5">
         <div class="flex flex-wrap justify-between items-end mb-[60px]">
           <div class="">
             <h5
               class="text-[#1B1C1E] font-bold text-[14px] text-center md:text-left uppercase"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
-              lATEST SERVICE
+              OUR FETURES
             </h5>
             <h2
               class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] text-center md:text-left"
+              data-aos="fade-up"
+              data-aos-duration="1200"
             >
               Empowering Businesses <br class="hidden md:block" />
               with Saas Technologies
             </h2>
           </div>
-          <p class="text-[#1B1C1E] mt-[20px] md:mt-0 text-center md:text-left">
+          <p
+            class="text-[#1B1C1E] mt-[20px] md:mt-0 text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             Cloud Services provide scalable on-demand access to computer
             <br class="hidden md:block" />
             resources such as storage Gatabases and applications through the
@@ -561,6 +633,8 @@
         <div class="flex flex-col gap-[30px]">
           <div
             class="flex flex-wrap justify-center md:justify-between items-center py-9 px-[50px] bg-[#fff] border-2 border-shadow rounded"
+            data-aos="fade-up"
+            data-aos-duration="1400"
           >
             <div
               class="flex flex-wrap justify-center md:justify-start items-center gap-8"
@@ -629,6 +703,8 @@
           </div>
           <div
             class="flex flex-wrap justify-center md:justify-between items-center py-9 px-[50px] bg-[#fff] border-2 border-shadow rounded"
+            data-aos="fade-up"
+            data-aos-duration="1600"
           >
             <div
               class="flex flex-wrap justify-center md:justify-start items-center gap-8"
@@ -733,6 +809,8 @@
           </div>
           <div
             class="flex flex-wrap justify-center md:justify-between items-center py-9 px-[50px] bg-[#fff] border-2 border-shadow rounded"
+            data-aos="fade-up"
+            data-aos-duration="1800"
           >
             <div
               class="flex flex-wrap justify-center md:justify-start items-center gap-8"
@@ -836,17 +914,23 @@
         </div>
       </div>
     </div>
+    <!---------------- OUR FEATURES END ---------------->
 
-    <div class="container mx-auto px-5 py-[120px]">
+    <!---------------- OUR SERVICES START ---------------->
+    <div class="container mx-auto px-5 py-[120px]" id="services">
       <div class="flex flex-wrap justify-between items-start">
         <div class="flex flex-col justify-center md:justify-start items-start">
           <h5
             class="text-[#FF9A66] font-bold text-[14px] text-left md:text-left uppercase"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             Our services
           </h5>
           <h2
             class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] text-center md:text-left"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             Driving Growth
             <div class="texttwo-overlay inline-block relative z-[999]">
@@ -860,6 +944,8 @@
           >
             <div
               class="border border-[#1B1C1E] rounded p-[20px] bg-[#fff] hover:bg-[#FFA970] ease-out duration-300"
+              data-aos="fade-up"
+              data-aos-duration="1400"
             >
               <svg
                 width="65"
@@ -888,6 +974,8 @@
             </div>
             <div
               class="border border-[#1B1C1E] rounded p-[20px] bg-[#fff] hover:bg-[#FFA970] ease-out duration-300"
+              data-aos="fade-up"
+              data-aos-duration="1600"
             >
               <svg
                 width="65"
@@ -995,6 +1083,8 @@
             </div>
             <div
               class="border border-[#1B1C1E] rounded p-[20px] bg-[#fff] hover:bg-[#FFA970] ease-out duration-300"
+              data-aos="fade-up"
+              data-aos-duration="1800"
             >
               <svg
                 width="65"
@@ -1054,6 +1144,8 @@
             </div>
             <div
               class="border border-[#1B1C1E] rounded p-[20px] bg-[#fff] hover:bg-[#FFA970] ease-out duration-300"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <svg
                 width="65"
@@ -1166,6 +1258,8 @@
           </div>
           <p
             class="text-[#1B1C1E] mt-[26px] text-center md:text-left mb-[20px] md:mb-0"
+            data-aos="fade-up"
+            data-aos-duration="2200"
           >
             Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
             dictum facilisis <br class="hidden md:block" />
@@ -1178,6 +1272,8 @@
           src="assets/home-two/saas1.svg"
           class="md:w-[560px] w-auto"
           alt=""
+          data-aos="fade-up"
+          data-aos-duration="1000"
         />
       </div>
 
@@ -1186,10 +1282,14 @@
           src="assets/home-two/saas2.png"
           class="md:w-[650px] w-auto"
           alt=""
+          data-aos="fade-up"
+          data-aos-duration="1000"
         />
         <div class="flex flex-col justify-start items-start">
           <h2
             class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-left mb-[20px]"
+            data-aos="fade-up"
+            data-aos-duration="1200"
           >
             Revolutionizing
             <div class="texttwo-overlay inline-block relative z-[999]">
@@ -1199,7 +1299,11 @@
             Processes with Saas
           </h2>
           <div class="flex justify-between items-start gap-10">
-            <div class="flex flex-col justify-start items-start gap-[10px]">
+            <div
+              class="flex flex-col justify-start items-start gap-[10px]"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
               <div class="flex justify-start items-center gap-3">
                 <div class="p-1 bg-[#FF9A66] rounded-full">
                   <svg
@@ -1273,7 +1377,11 @@
                 <p class="text-[#1B1C1E]">Saas Future innvence</p>
               </div>
             </div>
-            <div class="flex flex-col justify-start items-start gap-[10px]">
+            <div
+              class="flex flex-col justify-start items-start gap-[10px]"
+              data-aos="fade-up"
+              data-aos-duration="1600"
+            >
               <div class="flex justify-start items-center gap-3">
                 <div class="p-1 bg-[#FF9A66] rounded-full">
                   <svg
@@ -1355,6 +1463,8 @@
         <div class="flex flex-col justify-start items-start">
           <h2
             class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-left mb-[20px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           >
             Efficiency and Agility <br class="hidden md:block" />
             <div class="texttwo-overlay inline-block relative z-[999]">
@@ -1362,7 +1472,7 @@
             </div>
             Saas Solutions
           </h2>
-          <p class="text-[#1B1C1E]">
+          <p class="text-[#1B1C1E]" data-aos="fade-up" data-aos-duration="1200">
             Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies
             dictum facilisis <br class="hidden md:block" />
             sem the best Imperdiet massa turpis sit proin metus volutpat.Lorem
@@ -1374,16 +1484,26 @@
           src="assets/home-two/saas3.png"
           class="md:w-[560px] w-auto mt-6 md:mt-0"
           alt=""
+          data-aos="fade-up"
+          data-aos-duration="1400"
         />
       </div>
     </div>
+    <!---------------- OUR SERVICES END ---------------->
 
-    <div class="container mx-auto px-5 pb-[130px]">
-      <h5 class="text-[#FF9A66] font-bold text-[14px] text-center uppercase">
+    <!---------------- PRICING START ---------------->
+    <div class="container mx-auto px-5 pb-[130px]" id="pricing">
+      <h5
+        class="text-[#FF9A66] font-bold text-[14px] text-center uppercase"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Pricing plan
       </h5>
       <h2
         class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] text-center mt-[10px] mb-[60px]"
+        data-aos="fade-up"
+        data-aos-duration="1200"
       >
         Unlocking
         <div class="texttwo-overlay inline-block relative z-[999]">
@@ -1396,6 +1516,8 @@
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
         <div
           class="flex flex-col justify-center py-10 border border-shadow rounded bg-[#fff]"
+          data-aos="fade-up"
+          data-aos-duration="1400"
         >
           <div class="flex flex-col justify-center items-center">
             <svg
@@ -1540,6 +1662,8 @@
 
         <div
           class="flex flex-col justify-center py-10 border border-shadow rounded bg-[#fff]"
+          data-aos="fade-up"
+          data-aos-duration="1600"
         >
           <div class="flex flex-col justify-center items-center">
             <svg
@@ -1674,6 +1798,8 @@
 
         <div
           class="flex flex-col justify-center py-10 border border-shadow rounded bg-[#fff]"
+          data-aos="fade-up"
+          data-aos-duration="1800"
         >
           <div class="flex flex-col justify-center items-center">
             <svg
@@ -1823,17 +1949,25 @@
         </div>
       </div>
     </div>
+    <!---------------- PRICING END ---------------->
 
-    <div class="container mx-auto px-5 pb-[120px]">
+    <!---------------- TESTIMONIAL START ---------------->
+    <div class="container mx-auto px-5 pb-[120px]" id="testimonial">
       <div class="flex flex-wrap justify-between items-center">
         <div class="flex flex-col justify-start items-start">
-          <h5 class="text-[#FF9A66] font-bold text-[14px] uppercase">
+          <h5
+            class="text-[#FF9A66] font-bold text-[14px] uppercase"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Testimonial
           </h5>
           <div class="testimonial-content">
             <div class="testimonial-slide active">
               <h2
                 class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px]"
+                data-aos="fade-up"
+                data-aos-duration="1200"
               >
                 Driving
                 <div class="texttwo-overlay inline-block relative z-[999]">
@@ -1842,7 +1976,11 @@
                 <br class="hidden md:block" />
                 with Saas
               </h2>
-              <p class="text-[#1B1C1E]">
+              <p
+                class="text-[#1B1C1E]"
+                data-aos="fade-up"
+                data-aos-duration="1400"
+              >
                 Cloud Services provide scalable on-demand access to computer
                 <br class="hidden md:block" />
                 resources such as storage databases and applications
@@ -1851,6 +1989,8 @@
             <div class="testimonial-slide">
               <h2
                 class="text-[#1B1C1E] text-[48px] font-medium leading-[58px] mt-[10px] mb-[20px]"
+                data-aos="fade-up"
+                data-aos-duration="1200"
               >
                 <div class="texttwo-overlay inline-block relative z-[999]">
                   Transform
@@ -1858,7 +1998,11 @@
                 Your <br class="hidden md:block" />
                 Business with Cloud
               </h2>
-              <p class="text-[#1B1C1E]">
+              <p
+                class="text-[#1B1C1E]"
+                data-aos="fade-up"
+                data-aos-duration="1400"
+              >
                 Modern SaaS solutions enable businesses to scale efficiently
                 <br class="hidden md:block" />
                 and adapt to changing market demands quickly
@@ -1866,7 +2010,11 @@
             </div>
           </div>
 
-          <div class="flex justify-start items-center gap-[20px] mt-[50px]">
+          <div
+            class="flex justify-start items-center gap-[20px] mt-[50px]"
+            data-aos="fade-up"
+            data-aos-duration="1600"
+          >
             <button class="prev-slide" aria-label="Previous testimonial">
               <svg
                 width="23"
@@ -1903,29 +2051,47 @@
             src="assets/home-two/testimonial.png"
             alt="Testimonial 1"
             class="testimonial-image active"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           />
           <img
             src="assets/home-two/testimonial.png"
             alt="Testimonial 2"
             class="testimonial-image"
+            data-aos="fade-up"
+            data-aos-duration="1000"
           />
         </div>
       </div>
     </div>
+    <!---------------- TESTIMONIAL END ---------------->
 
-    <div class="bg-[#FF9A66] pt-[120px] pb-[110px]">
+    <!---------------- NEWSLETTER START ---------------->
+    <div class="bg-[#FF9A66] pt-[120px] pb-[110px]" id="contact">
       <div class="container mx-auto px-5">
         <div class="flex flex-col">
-          <h2 class="text-[#1B1C1E] text-[48px] font-medium text-center">
+          <h2
+            class="text-[#1B1C1E] text-[48px] font-medium text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Subscribe to our newsletter
           </h2>
-          <p class="text-center text-[#1B1C1E] mt-2 mb-10">
+          <p
+            class="text-center text-[#1B1C1E] mt-2 mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             It is a long established fact that a reader will be distracted by
             the readable <br class="hidden md:block" />
             content of a page when looking at its layout.
           </p>
 
-          <div class="flex flex-wrap justify-center items-center gap-[20px]">
+          <div
+            class="flex flex-wrap justify-center items-center gap-[20px]"
+            data-aos="fade-up"
+            data-aos-duration="1400"
+          >
             <input
               type="email"
               name="email"
@@ -1954,6 +2120,7 @@
         </div>
       </div>
     </div>
+    <!---------------- NEWSLETTER START ---------------->
 
     <div class="bg-[#1B1C1E] pt-20 pb-[35px]">
       <div class="container mx-auto px-5">
@@ -2287,5 +2454,26 @@
     </div>
 
     <script src="assets/js/custom.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+      });
+
+      const lenis = new Lenis({
+        smooth: true,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
   </body>
 </html>
